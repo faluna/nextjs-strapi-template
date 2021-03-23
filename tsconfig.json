@@ -17,8 +17,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": "./",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "atoms/*": ["src/atoms/*"],
+      "molecules/*": ["src/molecules/*"],
+      "organisms/*": ["src/organisms/*"],
+      "templates/*": ["src/templates/*"],
+      "pages/*": ["src/pages/*"],
+      "utils/*": ["src/utils/*"],
+      "tests/*": ["src/__tests__/*"]
     },
     "typeRoots": ["src/types", "node_modules/@types"]
   },
@@ -28,6 +36,7 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "strapi"
   ]
 }

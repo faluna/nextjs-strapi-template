@@ -12,6 +12,7 @@ module.exports = {
     config.resolve.alias['templates'] = path.join(__dirname, 'src/templates');
     config.resolve.alias['pages'] = path.join(__dirname, 'src/pages');
     config.resolve.alias['utils'] = path.join(__dirname, 'src/utils');
+    config.resolve.alias['tests'] = path.join(__dirname, 'src/__tests__');
     config.resolve.alias['~'] = path.join(__dirname, 'src');
 
     return config;
