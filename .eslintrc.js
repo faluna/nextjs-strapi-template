@@ -22,7 +22,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['react-hooks', 'react', '@typescript-eslint'],
+  plugins: ['react-hooks', 'react', '@typescript-eslint', 'aspida'],
   // 基本的にルールは recommended に従う
   // prettier 関連は配列の最後尾に書く
   extends: [
@@ -33,6 +33,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:testing-library/recommended',
     'plugin:jest-dom/recommended',
+    'plugin:aspida/recommended',
     'prettier',
     'prettier/react',
     'prettier/@typescript-eslint',

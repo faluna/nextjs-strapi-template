@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev:next": "next dev",
+    "build": "aspida && next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -12,7 +12,10 @@
     "serve": "yarn export && serve ./out",
     "generate-sitemap": "node src/utils/generate-sitemap.js",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev:aspida": "aspida --watch",
+    "build:api": "aspida",
+    "dev": "yarn dev:aspida && yarn dev:next"
   },
   "dependencies": {
     "@aspida/axios": "^1.6.3",
@@ -45,6 +48,7 @@
     "babel-loader": "^8.2.2",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-aspida": "^0.0.2",
     "eslint-plugin-jest-dom": "^3.6.5",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
