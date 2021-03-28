@@ -26,6 +26,8 @@
       "templates/*": ["src/templates/*"],
       "pages/*": ["src/pages/*"],
       "utils/*": ["src/utils/*"],
+      "api/*": ["src/api/*"],
+      "types/*": ["src/types/*"],
       "tests/*": ["src/__tests__/*"]
     },
     "typeRoots": ["src/types", "node_modules/@types"]

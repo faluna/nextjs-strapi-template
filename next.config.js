@@ -13,6 +13,8 @@ module.exports = {
     config.resolve.alias['pages'] = path.join(__dirname, 'src/pages');
     config.resolve.alias['utils'] = path.join(__dirname, 'src/utils');
     config.resolve.alias['tests'] = path.join(__dirname, 'src/__tests__');
+    config.resolve.alias['api'] = path.join(__dirname, 'src/api');
+    config.resolve.alias['types'] = path.join(__dirname, 'src/types');
     config.resolve.alias['~'] = path.join(__dirname, 'src');
 
     return config;
