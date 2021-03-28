@@ -15,7 +15,7 @@
     "prepare": "husky install",
     "dev:aspida": "aspida --watch",
     "build:api": "aspida",
-    "dev": "yarn dev:aspida && yarn dev:next"
+    "dev": "run-p dev:*"
   },
   "dependencies": {
     "@aspida/axios": "^1.6.3",
