@@ -4,7 +4,9 @@ import NextHead from 'next/head';
 import { useRouter } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 import { ChakraProvider } from '@chakra-ui/react';
-import * as gtag from '~/utils/gtag';
+import * as gtag from 'utils/gtag';
+
+import SEO from 'utils/next-seo.config';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   const router = useRouter();
@@ -20,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <ChakraProvider>
       <NextHead>
-        <DefaultSeo />
+        <DefaultSeo {...SEO} />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       </NextHead>
       <Component {...pageProps} />
