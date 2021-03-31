@@ -1,10 +1,12 @@
 import { withNextRouter } from 'storybook-addon-next-router';
 import { ChakraProvider } from '@chakra-ui/react';
+
 import './__mock/NextImage';
+import theme from '../src/utils/theme';
 
 export const decorators = [
   (Story) => (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Story />
     </ChakraProvider>
   ),
