@@ -1,9 +1,22 @@
-import { addDecorator } from '@storybook/react';
+import { withNextRouter } from 'storybook-addon-next-router';
 import { ChakraProvider } from '@chakra-ui/react';
 
-addDecorator((story) => <ChakraProvider>{story()}</ChakraProvider>);
+import './__mock/NextImage';
+import theme from '../src/utils/theme';
+
+export const decorators = [
+  (Story) => (
+    <ChakraProvider theme={theme}>
+      <Story />
+    </ChakraProvider>
+  ),
+  withNextRouter({
+    path: '/',
+    asPath: '/',
+    query: {},
+    push() {},
+  }),
+];
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
-};
-
