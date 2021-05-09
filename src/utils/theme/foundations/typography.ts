@@ -1,13 +1,13 @@
 const typography = {
   lineHeights: {
-    xs: '1rem',
-    sm: '1.5rem',
-    md: '1.5rem',
-    lg: '2rem',
-    xl: '2.5rem',
-    '2xl': '4rem',
-    '3xl': '5rem',
-    '4xl': '6.5rem',
+    xs: 2,
+    sm: 2,
+    md: 2,
+    lg: 1.75,
+    xl: 1.75,
+    '2xl': 1.6,
+    '3xl': 1.5,
+    '4xl': 1.4066,
   },
   fontSizes: {
     xs: '0.5rem',
