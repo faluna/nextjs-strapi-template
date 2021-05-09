@@ -1,16 +1,16 @@
 const textStyles = {
   h1: {
-    fontSize: ['4rem'],
-    fontWeight: 'bold',
-    lineHeight: [1.5],
-  },
-  h2: {
     fontSize: ['2.8125rem'],
     fontWeight: 'bold',
     lineHeight: [1.6],
   },
-  h3: {
+  h2: {
     fontSize: ['2rem'],
+    fontWeight: 'bold',
+    lineHeight: [1.75],
+  },
+  h3: {
+    fontSize: ['1.4375rem'],
     fontWeight: 'semibold',
     lineHeight: [1.75],
   },
